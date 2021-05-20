@@ -7,5 +7,5 @@ const fn=()=>{
 }
 
 ReactDOM.render(<div>
-  <Icon name="trend" onClick={fn}/>
+  <Icon name="trend" className="用户自己加的" onClick={fn}/>
 </div>, document.querySelector('#root'));
