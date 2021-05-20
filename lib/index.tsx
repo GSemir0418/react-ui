@@ -1,5 +1,9 @@
-import ReactDOM from 'react-dom'
-import React from 'react'
-import Icon from './Icon'
+import ReactDOM from 'react-dom';
+import React from 'react';
+import Icon from './icon';
 
-ReactDOM.render(<Icon name="trend" />, document.getElementById('root'))
+ReactDOM.render(<div>
+  <Icon name="wechat"/>
+  <Icon name="alipay"/>
+  <Icon name="qq"/>
+</div>, document.querySelector('#root'));

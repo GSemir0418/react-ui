@@ -4,8 +4,7 @@ module.exports = Object.assign({}, base, {
     mode: 'development',
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html',
-            title:'gsq-ui'
+            template: 'index.html'
         })
     ],
 })

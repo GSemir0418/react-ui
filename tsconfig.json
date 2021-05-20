@@ -23,8 +23,7 @@
     "noUnusedLocals": true
   },
   "include": [
-    //lib中所有东西和types中所有东西都是tsconfig要管的
-    "lib/**/*",
+    "lib/**/*"
   ],
   "exclude": [
     "node_modules",
