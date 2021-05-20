@@ -1,6 +1,5 @@
-import Button from './button';
+import ReactDOM from 'react-dom'
+import React from 'react'
+import Icon from './Icon'
 
-const a = 1
-console.log('hi')
-
-export {Button, a};
+ReactDOM.render(<Icon name="trend" />, document.getElementById('root'))
