@@ -3,7 +3,7 @@ import React from 'react';
 import Icon from './icon';
 
 ReactDOM.render(<div>
-  <Icon name="wechat"/>
-  <Icon name="alipay"/>
-  <Icon name="qq"/>
+  <Icon name="trend"/>
+  <Icon name="inventory"/>
+  <Icon name="user"/>
 </div>, document.querySelector('#root'));
