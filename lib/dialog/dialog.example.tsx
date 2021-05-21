@@ -7,7 +7,7 @@ const DialogExample: React.FunctionComponent = () => {
     <div>
       <button onClick={()=>{setX(!x)}}>click</button>
       <Dialog visible={x}>
-        <div>children</div>
+        <strong>hi</strong>
       </Dialog>
     </div>
   )
