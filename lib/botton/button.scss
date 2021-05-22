@@ -1,0 +1,37 @@
+@import "../helpers";
+.gsq-button {
+    min-width: 64px;
+    padding: 6px 16px;
+    line-height: 22px;
+    font-weight: 500;
+    border-radius: 4px;
+    // transition: all 250ms;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.685), 0px 2px 2px 0px rgba(0, 0, 0, 0.534),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.363);
+    &:focus {
+        outline: none;
+    }
+    &-normal {
+        color: #333;
+        border: 1px solid lighten(#333, 50%);
+        background: white;
+        &:hover,
+        &:focus {
+            border-color: $main-color;
+            color: $main-color;
+        }
+    }
+    &-important {
+        color: white;
+        border: 1px solid $main-color;
+        background: $main-color;
+        &:hover,
+        &:focus {
+            background: lighten($main-color, 10%);
+            border-color: lighten($main-color, 10%);
+        }
+    }
+}
