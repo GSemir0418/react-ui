@@ -1,0 +1,21 @@
+.gsq-layout{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  height: 400px;
+  &-content{
+    flex-grow: 1;//扩展比率
+    border: 1px solid green;
+  }
+  &.hasAside{//如果layout里面有aside 就需要添加一个hasAside类重新规划布局
+    flex-direction: row;//从column变成row
+    .gsq-layout {//里面的layout保持原来的column
+      flex-direction: column;
+    }
+  }
+  & &{//Layout里面还有个Layout，则内部Layout自动占满剩余空间
+    flex-grow: 1;//扩展比率
+    border: 1px solid green;
+    flex-direction: row;//内部的layout是左右结构
+  }
+}

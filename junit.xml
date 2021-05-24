@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="0" time="4.61">
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2021-05-24T09:32:59" time="2.996" tests="1">
+    <testcase classname="classes 接受字符串或对象或字符串数组" name="classes 接受字符串或对象或字符串数组" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2021-05-24T09:33:02" time="0.216" tests="2">
+    <testcase classname="icon render successfully" name="icon render successfully" time="0.008">
+    </testcase>
+    <testcase classname="icon onClick" name="icon onClick" time="0.03">
+    </testcase>
+  </testsuite>
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2021-05-24T09:33:02" time="0.132" tests="1">
+    <testcase classname="button 是个 div" name="button 是个 div" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2021-05-24T09:33:02" time="0.121" tests="1">
+    <testcase classname="我的第一个测试用例 add(1,2) 等于3" name="我的第一个测试用例 add(1,2) 等于3" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

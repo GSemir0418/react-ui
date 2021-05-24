@@ -3,9 +3,10 @@
 // }
 // export default classes
 
-const prefix = "gsq";
+
 
 function classes(componentName: string, ...args: any): string {
+  const prefix = "gsq";
   const className = new Array<string>();
   args.forEach((arg: any) => {
     if (typeof arg === "string") {
@@ -28,11 +29,11 @@ function classes(componentName: string, ...args: any): string {
 export default classes;
 
 
-//接收两个参数，两个参数分别在不同函数处理的情况下，使用高阶函数的方式
-//高阶函数就是返回函数的函数
-function scopedClassMaker(prefix: string) {
-  return function scopedClass(name: string) {
-    return [prefix, name].filter(Boolean).join('-')
-  }
-}
-export { scopedClassMaker }
+// //接收两个参数，两个参数分别在不同函数处理的情况下，使用高阶函数的方式
+// //高阶函数就是返回函数的函数
+// function scopedClassMaker(prefix: string) {
+//   return function scopedClass(name: string) {
+//     return [prefix, name].filter(Boolean).join('-')
+//   }
+// }
+// export { scopedClassMaker }

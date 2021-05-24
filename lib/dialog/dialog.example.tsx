@@ -6,7 +6,7 @@ const DialogExample: React.FunctionComponent = () => {
   const [x, setX] = useState(false)
   return (
     <div>
-      <Button onClick={()=>{setX(!x)}}>click</Button>
+      <Button ghost type="secondary" onClick={()=>{setX(!x)}}>click</Button>
       <Dialog visible={x}>
         <strong>hi</strong>
       </Dialog>

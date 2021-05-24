@@ -4,7 +4,7 @@ import classes from '../helpers/classes';
 import './button.scss';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-    type?: 'default' | 'dashed' | 'primary' | 'danger'
+    type?: 'default' | 'dashed' | 'primary' | 'danger' | 'secondary'
     //icon?: string
     //posision?: 'left' | 'right'
     size?: 'small' | 'medium' | 'large'
@@ -16,10 +16,10 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: React.FunctionComponent<Props> = (props) => {
     const cn = 'Button'
-    const { type, size, ghost, disabled, children,className ,...rest } = props;
+    const { type, size, ghost, disabled, children, className, ...rest } = props;
     return (
         <button className={
-            classes(cn,'', [size,type,className],{ghost,disabled}, 'ripple')
+            classes(cn, '', [size, type, className,'ripple'], { ghost, disabled })
         }
             {...rest}>
             {children}

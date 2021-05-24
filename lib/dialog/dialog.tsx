@@ -1,30 +1,30 @@
 import { Icon } from '../index'
 import React, { Fragment } from 'react'
 import './dialog.scss'
-import { scopedClassMaker } from '../helpers/classes'
+import classes from '../helpers/classes'
 
 interface Props {
   visible: boolean
 }
 
-const scopedClass = scopedClassMaker('gsq-dialog')
 
 const Dialog: React.FunctionComponent<Props> = (props) => {
+  const cn = 'Dialog'
   return (
     props.visible ?
       <Fragment>
-        <div className={scopedClass('mask')}></div>
-        <div className={scopedClass('')}>
-          <div className={scopedClass('close')}>
+        <div className={classes(cn,'mask')}></div>
+        <div className={classes(cn,'')}>
+          <div className={classes(cn,'close')}>
             <Icon name='close' />
           </div>
-          <header className={scopedClass('header')}>
+          <header className={classes(cn,'header')}>
             提示
           </header>
-          <main className={scopedClass('main')}>
+          <main className={classes(cn,'main')}>
             {props.children}
           </main>
-          <footer className={scopedClass('footer')}>
+          <footer className={classes(cn,'footer')}>
             <button>ok</button>
             <button>cancel</button>
           </footer>
