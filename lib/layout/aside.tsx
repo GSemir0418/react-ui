@@ -6,7 +6,9 @@ const Aside: React.FunctionComponent<Props> = (props) => {
   const cn = 'Layout'
   const { className, ...rest } = props
   return (
-    <div className={classes(cn, 'aside', [className])} {...rest}>aside</div>
+    <div className={classes(cn, 'aside', [className])} {...rest}>
+      {props.children}
+    </div>
   )
 }
 export default Aside

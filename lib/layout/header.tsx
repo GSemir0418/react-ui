@@ -7,7 +7,9 @@ const Header:React.FunctionComponent<Props>=(props)=>{
   const cn = 'Layout'
   const { className, ...rest } = props
   return(
-    <div className={classes(cn,'header', [className])} {...rest}>header</div>
+    <div className={classes(cn,'header', [className])} {...rest}>
+      {props.children}
+    </div>
   )
 }
 export default Header

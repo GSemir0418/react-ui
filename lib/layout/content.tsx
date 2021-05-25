@@ -7,7 +7,9 @@ const Content: React.FunctionComponent<Props> = (props) => {
   const cn = 'Layout'
   const { className, ...rest } = props
   return (
-    <div className={classes(cn, 'content', [className])} {...rest}>content</div>
+    <div className={classes(cn, 'content', [className])} {...rest}>
+      {props.children}
+    </div>
   )
 }
 export default Content

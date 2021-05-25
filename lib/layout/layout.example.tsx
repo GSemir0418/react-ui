@@ -4,48 +4,49 @@ import Content from './content'
 import Footer from './footer'
 import Header from './header'
 import Layout from './layout'
+import './layout.example.scss'
 
 export default function () {
   return (
     <div>
       <div>
         <h2>第一个例子</h2>
-        <Layout>
-          <Header>header</Header>
-          <Content>content</Content>
-          <Footer>footer</Footer>
+        <Layout style={{height:500,width:600}}>
+          <Header className='x'>HEADER</Header>
+          <Content className='y'>CONTENT</Content>
+          <Footer className='x'>FOOTER</Footer>
         </Layout>
       </div>
       <div>
         <h2>第二个例子</h2>
-        <Layout>
-          <Header>header</Header>
+        <Layout style={{height:500,width:600}}>
+          <Header className='x'>HEADER</Header>
           <Layout>
-            <Aside></Aside>
-            <Content></Content>
+            <Aside className='z'>ASIDE</Aside>
+            <Content className='y'>CONTENT</Content>
           </Layout>
-          <Footer>footer</Footer>
+          <Footer className='x'>FOOTER</Footer>
         </Layout>
       </div>
       <div>
         <h2>第三个例子</h2>
-        <Layout>
-          <Header>header</Header>
+        <Layout style={{height:500,width:600}}>
+          <Header className='x'>HEADER</Header>
           <Layout>
-            <Content></Content>
-            <Aside></Aside>
+            <Content className='y'>CONTENT</Content>
+            <Aside className='z1'>ASIDE</Aside>
           </Layout>
-          <Footer>footer</Footer>
+          <Footer className='x'>FOOTER</Footer>
         </Layout>
       </div>
       <div>
         <h2>第四个例子</h2>
-        <Layout>
-          <Aside></Aside>
+        <Layout style={{height:500,width:600}}>
+          <Aside className='z'>ASIDE</Aside>
           <Layout>
-            <Header>header</Header>
-            <Content></Content>
-            <Footer>footer</Footer>
+            <Header className='x'>HEADER</Header>
+            <Content className='y'>CONTENT</Content>
+            <Footer className='x'>FOOTER</Footer>
           </Layout>
         </Layout>
       </div>
