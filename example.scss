@@ -11,8 +11,11 @@
     box-sizing: border-box;
   }
 }
-body{
+body {
   font-size: 16px;
+}
+pre {
+  font-family: 'Fira Code Medium', Consolas, monospace;
 }
 h1,
 h2,
@@ -58,7 +61,7 @@ a {
       position: absolute;
       bottom: 0.2rem;
       left: 50%;
-      transform: translateX(-50%); 
+      transform: translateX(-50%);
     }
   }
 }
