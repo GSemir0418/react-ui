@@ -3,10 +3,10 @@ import IconExample from './icon.example'
 import CodeDemo from '../../codeDemo'
 
 const x = require('!!raw-loader!./icon.example.tsx')
-const IconDemo: React.FunctionComponent = () => {
+const IconDemo: React.FunctionComponent = (props) => {
   return (
     <CodeDemo code={x.default}>
-      <IconExample/>
+      <IconExample />
     </CodeDemo>
   )
 }
