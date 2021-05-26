@@ -9,7 +9,7 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
 const Layout: React.FunctionComponent<Props> = (props) => {
   const cn = 'Layout'
   const children = props.children as Array<ReactElement>
-  const hasAside = length in children &&
+  const hasAside = 'length' in children &&
     children.reduce((result, node) => result || node.type === Aside, false)
   const { className, ...rest } = props
   return (

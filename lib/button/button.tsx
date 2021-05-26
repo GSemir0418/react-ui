@@ -4,7 +4,7 @@ import classes from '../helpers/classes';
 import './button.scss';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-    type?: 'default' | 'dashed' | 'primary' | 'danger' | 'secondary'
+    type?: 'default' | 'dashed' | 'primary' | 'danger' | 'secondary'| 'text'
     //icon?: string
     //posision?: 'left' | 'right'
     size?: 'small' | 'medium' | 'large'
