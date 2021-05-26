@@ -1,12 +1,12 @@
 import React from 'react'
-import IconExample from './icon.example'
+import LayoutExample from './layout.example'
 import CodeDemo from '../../codeDemo'
 
-const x = require('!!raw-loader!./icon.example.tsx')
+const x = require('!!raw-loader!./layout.example.tsx')
 const IconDemo: React.FunctionComponent = () => {
   return (
     <CodeDemo code={x.default}>
-      <IconExample />
+      <LayoutExample />
     </CodeDemo>
   )
 }

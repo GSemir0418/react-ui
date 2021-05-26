@@ -103,7 +103,8 @@
     }
   }
   &.dashed {
-    border-style: dashed;
+    border:1.5px dashed;
+    box-shadow: none;
   }
   &.primary {
     color: #fff;

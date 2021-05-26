@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter as Router, Route, NavLink } from 'react-router-dom'
 import IconDemo from './lib/icon/icon.demo'
-import ButtonExample from './lib/button/button.example'
+import ButtonDemo from './lib/button/button.demo'
 import DialogExample from './lib/dialog/dialog.example'
-import LayoutExample from './lib/layout/layout.example'
+import LayoutDemo from './lib/layout/layout.demo'
 import ColorExample from './lib/helpers/color.example'
 import { Layout, Header, Aside, Content, Footer } from './lib/layout/layout'
 import './example.scss'
@@ -44,12 +44,10 @@ ReactDOM.render(
         </Aside>
         <Content className='site-main'>
           <Route path='/icon' component={IconDemo} />
-          <Route path='/button' component={ButtonExample} />
+          <Route path='/button' component={ButtonDemo} />
           <Route path='/dialog' component={DialogExample} />
-
-          <Route path='/layout' component={LayoutExample} />
+          <Route path='/layout' component={LayoutDemo} />
           <Route path='/color' component={ColorExample} />
-
         </Content>
       </Layout>
       <Footer className='site-footer'>

@@ -7,8 +7,7 @@ const DialogExample: React.FunctionComponent = () => {
   const [y, setY] = useState(false)
   return (
     <div>
-
-      <h1>example1</h1>
+      <h1>EXAMPLE1</h1>
       <div>
         <Button ghost type="secondary" onClick={() => setX(!x)}>click</Button>
         <Dialog visible={x} buttons={
@@ -20,7 +19,7 @@ const DialogExample: React.FunctionComponent = () => {
           <strong>hi</strong>
         </Dialog>
       </div>
-      <h1>example2</h1>
+      <h1>EXAMPLE2</h1>
       <div>
         <Button ghost type="secondary" onClick={() => setY(!y)}>click</Button>
         <Dialog visible={y} closeOnClickMask={true} buttons={

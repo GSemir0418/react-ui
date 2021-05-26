@@ -1,0 +1,17 @@
+.buttonDemo{
+  display: flex;
+  flex-direction: column;
+}
+.b{
+  margin: 10px;
+  >Button{
+    margin: 10px;
+  }
+}
+.b1{
+  margin: 10px;
+  background-color: #243521;
+  >Button{
+    margin: 10px;
+  }
+}

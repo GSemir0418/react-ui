@@ -10,16 +10,17 @@ export default function () {
   return (
     <div>
       <div>
-        <h2>第一个例子</h2>
-        <Layout style={{height:500,width:600}}>
+        <h2>EXAMPLE1</h2>
+        <Layout className='lat'>
           <Header className='x'>HEADER</Header>
           <Content className='y'>CONTENT</Content>
           <Footer className='x'>FOOTER</Footer>
         </Layout>
       </div>
+      <br/>
       <div>
-        <h2>第二个例子</h2>
-        <Layout style={{height:500,width:600}}>
+        <h2>EXAMPLE2</h2>
+        <Layout className='lat'>
           <Header className='x'>HEADER</Header>
           <Layout>
             <Aside className='z'>ASIDE</Aside>
@@ -28,9 +29,10 @@ export default function () {
           <Footer className='x'>FOOTER</Footer>
         </Layout>
       </div>
+      <br/>
       <div>
-        <h2>第三个例子</h2>
-        <Layout style={{height:500,width:600}}>
+        <h2>EXAMPLE3</h2>
+        <Layout className='lat'>
           <Header className='x'>HEADER</Header>
           <Layout>
             <Content className='y'>CONTENT</Content>
@@ -39,9 +41,10 @@ export default function () {
           <Footer className='x'>FOOTER</Footer>
         </Layout>
       </div>
+      <br/>
       <div>
-        <h2>第四个例子</h2>
-        <Layout style={{height:500,width:600}}>
+        <h2>EXAMPLE4</h2>
+        <Layout className='lat'>
           <Aside className='z'>ASIDE</Aside>
           <Layout>
             <Header className='x'>HEADER</Header>

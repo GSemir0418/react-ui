@@ -49,8 +49,8 @@ Dialog.defaultProps = {
   closeOnClickMask: false
 }
 
-const Alert = (content: string) => {
+// const Alert = (content: string) => {
 
-}
+// }
 
 export default Dialog
