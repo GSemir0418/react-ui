@@ -85,7 +85,7 @@
   &:hover {
     color: $hover;
     border-color: $hover;
-    z-index: 1;
+    z-index: 0;
   }
   &:focus {
     outline: none;

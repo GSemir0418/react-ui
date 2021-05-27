@@ -27,10 +27,14 @@ describe('classes',()=>{
     const className='customClass'
     const disabled = true
     const ghost = false
+    const theme = 'theme1'
     expect(classes('layout','')).toEqual('gsq-layout')
     expect(classes('layout','header')).toEqual('gsq-layout-header')
     expect(classes('button','',[className])).toEqual('gsq-button customClass')
     expect(classes('button','',[className],{disabled,ghost})).toEqual('gsq-button customClass disabled')
     expect(classes('button','',[className,'ripple'])).toEqual('gsq-button customClass ripple')
+    expect(classes('button','header',[className,'ripple'])).toEqual('gsq-button-header customClass ripple')
+    expect(classes('button',`${theme}`,[className,'ripple'])).toEqual('gsq-button-theme1 customClass ripple')
+    expect(classes('button','header',`${theme}`,[className,'ripple'])).toEqual('gsq-button-header-theme1 customClass ripple')
   })
 })

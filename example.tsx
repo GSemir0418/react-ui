@@ -38,7 +38,7 @@ ReactDOM.render(
               <NavLink to='/layout'>Layout</NavLink>
             </li>
             <li>
-              <NavLink to='/color'>配色方案</NavLink>
+              <NavLink to='/color'>Theme</NavLink>
             </li>
           </ul>
         </Aside>
